@@ -1,0 +1,17 @@
+name: ReferMe
+version: '1.0'
+main: org.pushkraj.ReferMe
+api-version: '1.21'
+author: pushkraj
+description: A referral system plugin with rewards and tracking
+
+commands:
+  refer:
+    description: Refer another player
+    usage: /refer <player>
+    permission: referme.use
+
+permissions:
+  referme.use:
+    description: Allows players to use the refer command
+    default: true
