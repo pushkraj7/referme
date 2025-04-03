@@ -1,0 +1,27 @@
+# ReferMe Plugin Configuration
+
+# Time in seconds before a player can make another referral
+cooldown: 3600
+
+# Rewards for referrals
+rewards:
+  referrer:
+    # Money reward for the referrer
+    money: 100
+    # Commands to execute for referrer (use {player} as placeholder)
+    commands:
+      - "give {player} diamond 1"
+  
+  referred:
+    # Money reward for the referred player
+    money: 50
+    # Commands to execute for referred player
+    commands:
+      - "give {player} iron_ingot 5"
+
+# Messages
+messages:
+  cooldown: "§cYou must wait {time} before making another referral!"
+  success: "§aSuccessfully referred {player}! You received your rewards."
+  received: "§aYou have been referred by {referrer}! You received your rewards."
+  already-referred: "§cThis player has already been referred!"
