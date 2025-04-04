@@ -49,6 +49,7 @@
                         </goals>
                     </execution>
                 </executions>
+a
             </plugin>
         </plugins>
     </build>
